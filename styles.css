@@ -1,0 +1,37 @@
+html {
+    scroll-behavior: smooth;
+    background-image: url('space-4k.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-family: "Calibri Light", sans-serif;
+    color: deepskyblue;
+    font-size: 72px;
+    text-align: center;
+    vertical-align: 50%;
+}
+
+h2 {
+    font-family: "Calibri Light", sans-serif;
+    color: white;
+    font-size: 48px;
+    text-align: center;
+    vertical-align: 50%;
+}
+
+p {
+    font-family: "Calibri Light", sans-serif;
+    color: white;
+    font-size: 14px;
+}
+body {
+    opacity: 0;
+    transition: opacity 2.25s;
+}
+
+/* Title text shadow on page load screen. */
+.title-shadow {
+    text-shadow: 2px 2px 0 #000;
+}
