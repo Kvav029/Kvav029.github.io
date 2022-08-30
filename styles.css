@@ -6,7 +6,6 @@ html {
 }
 
 h1 {
-    font-family: "Calibri Light", sans-serif;
     color: deepskyblue;
     font-size: 72px;
     text-align: center;
@@ -14,7 +13,6 @@ h1 {
 }
 
 h2 {
-    font-family: "Calibri Light", sans-serif;
     color: white;
     font-size: 48px;
     text-align: center;
@@ -22,13 +20,13 @@ h2 {
 }
 
 p {
-    font-family: "Calibri Light", sans-serif;
     color: white;
     font-size: 14px;
 }
 body {
     opacity: 0;
     transition: opacity 2.25s;
+    font-family: "Calibri Light", sans-serif;
 }
 
 /* Title text shadow on page load screen. */
