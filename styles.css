@@ -5,20 +5,19 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #151515;
+    height: 100%;
 }
 
 h1 {
     color: deepskyblue;
     font-size: 90px;
-    text-align: center;
-    vertical-align: 50%;
+    line-height: 2%;
 }
 
 h2 {
     color: white;
     font-size: 55px;
-    text-align: center;
-    vertical-align: 50%;
+    line-height: 100%;
 }
 
 p {
@@ -38,11 +37,28 @@ body {
 }
 
 .vertical-center {
-    width: 100vw;
-    height: 85vh;
+    width: 96vw;
+    height: 95vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: fixed;
     text-align: center;
+}
+
+.parallax {
+    /* Set a specific height */
+    height: 1480px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
 }
