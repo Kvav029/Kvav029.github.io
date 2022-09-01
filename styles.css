@@ -1,8 +1,10 @@
 html {
     scroll-behavior: smooth;
-    background-image: url('space-4k.jpeg');
+    /* Background image is commented until all main colors are applied. */
+    /* background-image: url('space-4k.jpeg'); */
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: #151515;
 }
 
 h1 {
@@ -23,6 +25,7 @@ p {
     color: white;
     font-size: 14px;
 }
+
 body {
     opacity: 0;
     transition: opacity 2.25s;
@@ -31,5 +34,5 @@ body {
 
 /* Title text shadow on page load screen. */
 .title-shadow {
-    text-shadow: 2px 2px 0 #000;
+    text-shadow: 2px 4px 0 #000;
 }
