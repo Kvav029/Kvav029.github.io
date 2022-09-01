@@ -9,14 +9,14 @@ html {
 
 h1 {
     color: deepskyblue;
-    font-size: 72px;
+    font-size: 90px;
     text-align: center;
     vertical-align: 50%;
 }
 
 h2 {
     color: white;
-    font-size: 48px;
+    font-size: 55px;
     text-align: center;
     vertical-align: 50%;
 }
@@ -35,4 +35,14 @@ body {
 /* Title text shadow on page load screen. */
 .title-shadow {
     text-shadow: 2px 4px 0 #000;
+}
+
+.vertical-center {
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    text-align: center;
 }
