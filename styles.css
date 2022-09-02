@@ -57,6 +57,8 @@ body {
     background-size: cover;
 }
 
+/* Responsive format for mobile and vertical displays. */
+
 @media only screen and (max-device-width: 1366px) {
     .parallax {
         background-attachment: scroll;
