@@ -1,7 +1,6 @@
 html {
     scroll-behavior: smooth;
-    /* Background image is commented until all main colors are applied. */
-    /* background-image: url('space-4k.jpeg'); */
+    font-family: "Calibri Light", sans-serif;
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #151515;
@@ -28,7 +27,6 @@ p {
 body {
     opacity: 0;
     transition: opacity 2.25s;
-    font-family: "Calibri Light", sans-serif;
 }
 
 /* Title text shadow on page load screen. */
@@ -48,10 +46,18 @@ body {
 
 .textbox {
     display: flex;
-    justify-content: left;
+    justify-content: center;
+    text-align: justify;
+    position: relative;
     padding: 50px;
     background-color: dodgerblue;
     font-size: 20px;
+}
+
+/* Allows the page to be scrollable with all elements as a temporary class. */
+
+.scrolldiv {
+    height: 1000vh;
 }
 
 /* Responsive format for mobile and vertical displays. */
