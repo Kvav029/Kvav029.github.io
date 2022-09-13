@@ -13,6 +13,10 @@ h1 {
     line-height: 2%;
 }
 
+.fadeIn {
+    animation: fadeIn 3s;
+}
+
 h2 {
     color: white;
     font-size: 55px;
@@ -22,11 +26,6 @@ h2 {
 p {
     color: white;
     font-size: 14px;
-}
-
-body {
-    opacity: 0;
-    transition: opacity 2.25s;
 }
 
 /* Title text shadow on page load screen. */
@@ -44,20 +43,14 @@ body {
     text-align: center;
 }
 
-.textbox {
+.greeting-textbox {
     display: flex;
     justify-content: center;
     text-align: justify;
     position: relative;
-    padding: 50px;
+    padding: 5vh;
     background-color: dodgerblue;
     font-size: 20px;
-}
-
-/* Allows the page to be scrollable with all elements as a temporary class. */
-
-.scrolldiv {
-    height: 1000vh;
 }
 
 /* Responsive format for mobile and vertical displays. */
@@ -67,3 +60,11 @@ body {
         background-attachment: scroll;
     }
 }
+
+/* Fade-in animation for the main headings on page load. */
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
