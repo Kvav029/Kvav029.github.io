@@ -33,9 +33,11 @@ p {
     text-shadow: 2px 4px 0 #000;
 }
 
+/* Vertical alignment for heading elements */
+
 .vertical-center {
-    width: 96vw;
-    height: 95vh;
+    height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,18 +49,44 @@ p {
 
 .greeting-textbox {
     display: flex;
-    justify-content: center;
-    text-align: justify;
+    justify-content: space-around;
+    text-align: center;
     position: relative;
-    padding: 5vh;
+    padding: 4vh;
     background-color: dodgerblue;
     font-size: 20px;
+}
+
+.link-box {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin-top: 5em;
+    bottom: -50vh;
+    padding: 5vh;
+    border-radius: 5vh;
+    border: 5px solid #000000;
+    height: 100%;
+}
+
+.GL, .LIL {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 10vh;
+    height: 10vh;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+.GL:hover, .LIL:hover {
+    top: -1.25vh;
 }
 
 /* Responsive format for mobile and vertical displays. */
 
 @media only screen and (max-device-width: 1366px) {
-    .parallax {
+    html {
         background-attachment: scroll;
     }
 }
@@ -69,4 +97,3 @@ p {
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
-
