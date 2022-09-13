@@ -43,6 +43,8 @@ p {
     text-align: center;
 }
 
+/* Temporary div textbox on page load. */
+
 .greeting-textbox {
     display: flex;
     justify-content: center;
