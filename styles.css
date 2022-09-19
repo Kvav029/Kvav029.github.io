@@ -5,6 +5,8 @@ html {
     background-repeat: no-repeat;
     background-color: #151515;
     height: 100%;
+    user-select: none;
+    overflow: visible;
 }
 
 h1 {
@@ -24,16 +26,16 @@ h2 {
 }
 
 p {
-    color: white;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 /* Title text shadow on page load screen. */
+
 .title-shadow {
     text-shadow: 2px 4px 0 #000;
 }
 
-/* Vertical alignment for heading elements */
+/* Vertical alignment for heading elements. */
 
 .vertical-center {
     height: 100vh;
@@ -49,19 +51,37 @@ p {
 
 .greeting-textbox {
     display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding: 1vh;
+    background-color: dodgerblue;
+    border-radius: 5vh;
+}
+
+.centered-text {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.about-me {
+    display: flex;
     justify-content: space-around;
     text-align: center;
     position: relative;
-    padding: 4vh;
+    width: 25vw;
+    height: 25vh;
+    padding: 5vh;
+    border-radius: 5vh;
     background-color: dodgerblue;
-    font-size: 20px;
 }
 
 .link-box {
     display: flex;
     justify-content: space-around;
     position: relative;
-    margin-top: 5em;
     bottom: -50vh;
     padding: 5vh;
     border-radius: 5vh;
