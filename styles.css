@@ -1,10 +1,7 @@
 html {
     scroll-behavior: smooth;
     font-family: "Calibri Light", sans-serif;
-    background-size: cover;
-    background-repeat: no-repeat;
     background-color: #151515;
-    height: 100%;
     user-select: none;
     overflow: visible;
 }
@@ -57,6 +54,7 @@ p {
     padding: 1vh;
     background-color: dodgerblue;
     border-radius: 5vh;
+    border: 5px solid #000000;
 }
 
 .centered-text {
@@ -66,23 +64,27 @@ p {
     transform: translateY(-50%);
 }
 
-.about-me {
+
+/*
+.about-me1 {
     display: flex;
     justify-content: space-around;
     text-align: center;
     position: relative;
     width: 25vw;
-    height: 25vh;
+    height: 5vw;
     padding: 5vh;
     border-radius: 5vh;
     background-color: dodgerblue;
+    border: 5px solid #000000;
 }
+*/
 
 .link-box {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     position: relative;
-    bottom: -50vh;
+    top: 60vh;
     padding: 5vh;
     border-radius: 5vh;
     border: 5px solid #000000;
@@ -97,6 +99,18 @@ p {
     height: 10vh;
     top: 0;
     transition: top ease 0.5s;
+}
+
+.AB-starting-box {
+    display: table;
+    justify-content: left;
+    text-align: center;
+    position: relative;
+    width: 100vw;
+    height: 5vh;
+    padding: 5vh;
+    background-color: white;
+    border: 5px solid #000000;
 }
 
 .GL:hover, .LIL:hover {
