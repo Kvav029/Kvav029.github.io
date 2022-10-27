@@ -1,5 +1,5 @@
 # Kvav029.github.io
-Portfolio website for Kevin Vavrik.
+Personal website for Kevin Vavrik.
 =======
 >>>>>>> 
 
