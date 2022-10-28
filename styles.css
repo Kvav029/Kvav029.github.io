@@ -64,22 +64,6 @@ p {
     transform: translateY(-50%);
 }
 
-
-/*
-.about-me1 {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    position: relative;
-    width: 25vw;
-    height: 5vw;
-    padding: 5vh;
-    border-radius: 5vh;
-    background-color: dodgerblue;
-    border: 5px solid #000000;
-}
-*/
-
 .link-box {
     display: flex;
     justify-content: space-evenly;
