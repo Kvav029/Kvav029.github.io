@@ -9,33 +9,28 @@ html {
 body, html {
     line-height: 1.8em;
     height: 100%;
+    font-size:0.8em;
 }
 
 h1 {
+    text-shadow: 2px 4px 0 #000;
     color: deepskyblue;
-    font-size: 90px;
+    font-size: 9em;
     line-height: 2%;
+    width: 100%;
 
 }
 
 h2 {
     color: white;
-    font-size: 55px;
+    font-size: 6em;
     line-height: 100%;
-}
-
-p {
-    display: flex;
-    position: relative;
-    text-align: center;
-    font-size: 50px;
-    font-weight: lighter;
-    line-height: 100%;
-    margin: 0 auto;
+    text-shadow: 2px 4px 0 #000;
 }
 
 .about-me-text {
-    font-size: 36px;
+    font-size: 3em;
+    line-height: 125%;
     padding: 3vw;
     margin: auto;
 }
@@ -44,13 +39,15 @@ p {
     animation: fadeIn 3s;
 }
 
-/* Title text shadow on page load screen. */
-
-.title-shadow {
-    text-shadow: 2px 4px 0 #000;
-}
-
 /* Vertical alignment for heading elements. */
+
+/* display: block;
+margin-block-start: 1em;
+margin-block-end: 1em;
+margin-inline-start: 0px;
+margin-inline-end: 0px; */
+
+/* KEPT HERE FOR REFERENCE! */
 
 .vertical-center {
     height: 100vh;
@@ -68,8 +65,8 @@ p {
     position: relative;
     top: 100vh;
     padding: 6.5vh;
-    margin-left: 35vh;
-    margin-right: 35vh;
+    margin-left: 50vh;
+    margin-right: 50vh;
     border-radius: 5vh;
     border: 5px solid #000000;
 }
@@ -95,7 +92,7 @@ p {
     margin-left: 3vw;
     margin-right: 3vw;
     background-color: aliceblue;
-    top: 25vh;
+    top: 27vh;
     width: 40vw;
     height: 40vh;
 }
