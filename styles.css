@@ -6,14 +6,16 @@ html {
     overflow: visible;
 }
 
+body, html {
+    line-height: 1.8em;
+    height: 100%;
+    margin: 0;
+}
+
 h1 {
     color: deepskyblue;
     font-size: 90px;
     line-height: 2%;
-}
-
-.fadeIn {
-    animation: fadeIn 3s;
 }
 
 h2 {
@@ -23,7 +25,23 @@ h2 {
 }
 
 p {
-    font-size: 20px;
+    display: flex;
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    font-weight: lighter;
+    line-height: 100%;
+    margin: 0 auto;
+}
+
+.about-me-text {
+    font-size: 36px;
+    padding: 3vw;
+    margin: auto;
+}
+
+.fadeIn {
+    animation: fadeIn 3s;
 }
 
 /* Title text shadow on page load screen. */
@@ -44,35 +62,16 @@ p {
     text-align: center;
 }
 
-/* Temporary div textbox on page load. */
-
-.greeting-textbox {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-    padding: 1vh;
-    background-color: dodgerblue;
-    border-radius: 5vh;
-    border: 5px solid #000000;
-}
-
-.centered-text {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
 .link-box {
     display: flex;
     justify-content: space-evenly;
     position: relative;
-    top: 60vh;
-    padding: 5vh;
+    top: 100vh;
+    padding: 6.5vh;
+    margin-left: 35vh;
+    margin-right: 35vh;
     border-radius: 5vh;
     border: 5px solid #000000;
-    height: 100%;
 }
 
 .GL, .LIL {
@@ -85,16 +84,60 @@ p {
     transition: top ease 0.5s;
 }
 
-.AB-starting-box {
-    display: table;
-    justify-content: left;
+/* Text Boxes for descriptive texts. */
+
+.ABT-1, .ABT-2, .ABT-3 {
+    display: flex;
+    justify-content: center;
     text-align: center;
     position: relative;
-    width: 100vw;
-    height: 5vh;
-    padding: 5vh;
-    background-color: white;
-    border: 5px solid #000000;
+    border-radius: 4vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    background-color: aliceblue;
+    top: 25vh;
+    width: 40vw;
+    height: 40vh;
+}
+
+.ABT-2 {
+    left: 100vh;
+}
+
+/* Background images for parallax scrolling divs. */
+
+.bgimg1 {
+    background-image: url("Images/img151515.svg");
+    min-height: 100%;
+}
+
+.bgimg2 {
+    background-image: url("Images/div1.jpg");
+    min-height: 100%;
+}
+
+.bgimg3 {
+    background-image: url("Images/div2.png");
+    min-height: 100%;
+}
+
+.bgimg4 {
+    background-image: url("Images/div3.png");
+    min-height: 100%;
+}
+
+.bgimg5 {
+    background-image: url("Images/img151515.svg");
+    min-height: 100%;
+}
+
+.bgimg1, .bgimg2, .bgimg3, .bgimg4, .bgimg5 {
+    position: relative;
+    opacity: 1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .GL:hover, .LIL:hover {
