@@ -9,13 +9,13 @@ html {
 body, html {
     line-height: 1.8em;
     height: 100%;
-    margin: 0;
 }
 
 h1 {
     color: deepskyblue;
     font-size: 90px;
     line-height: 2%;
+
 }
 
 h2 {
@@ -146,7 +146,7 @@ p {
 
 /* Responsive format for mobile and vertical displays. */
 
-@media only screen and (max-device-width: 1366px) {
+@media only screen and (max-device-width: 1366px) and (min-width: 400px) {
     html {
         background-attachment: scroll;
     }
